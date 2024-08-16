@@ -51,7 +51,8 @@ int		ft_putchar(char c);
 int		ft_putnbr(int nbr);
 char	**ft_split(const char *str, const char *charset);
 char	*ft_strjoin(const char *str1, const char *str2);
-char	*ft_conv_to_base(long num, const char *base_to);
+char	*ft_conv_to_base(unsigned long num, const char *base_to);
+int		ft_putnbr_base(long num, const char *base_to);
 char	*ft_itoa(int num);
 char	*ft_strrev(char *str);
 

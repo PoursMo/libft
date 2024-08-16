@@ -4,6 +4,7 @@ SOURCES =	ft_atoi.c			\
 			ft_bzero.c			\
 			ft_calloc.c			\
 			ft_conv_to_base.c	\
+			ft_putnbr_base.c	\
 			ft_isalnum.c		\
 			ft_isalpha.c		\
 			ft_isascii.c		\

@@ -4,5 +4,5 @@
 
 int main()
 {
-	printf("%d", putchar(64) != -1);
+	printf("\n%d\n", ft_putnbr_base(-2147483648, "012"));
 }
