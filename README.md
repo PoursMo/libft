@@ -56,7 +56,7 @@
 :warning: Returns a malloc-ed string
 *	split			-	Splits a string into an array of substrings\
 :warning: Returns a malloc-ed array of malloc-ed strings
-*	conv_to_base	-	Converts an integer to a specified base\
+*	conv_to_base	-	Converts an unsigned 64-bit integer to a specified base\
 :warning: Returns a malloc-ed string
 *	putnbr_base		-	Writes a 64-bit integer converted to a specified base to the standard input
 *	itoa			-	Converts an integer to a string
