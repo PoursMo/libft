@@ -30,13 +30,13 @@
 *	memcmp			-	Compares two buffers (three-way comparison)
 *	memchr			-	Finds the first occurrence of a byte in a buffer 
 *	bzero			-	Fills a buffer with zero bytes 
-*	strdup			-	Allocates and duplicates a string
+*	strdup			-	Allocates and duplicates a string\
 :warning: Returns a malloc-ed string
-*	strndup			-	Allocates and duplicates n bytes of a string
+*	strndup			-	Allocates and duplicates n bytes of a string\
 :warning: Returns a malloc-ed string
 ###	**stdlib.h**
 *	atoi			-	Converts a string to an integer
-*	calloc			-	Allocates the specified number of bytes and initializes them to zero
+*	calloc			-	Allocates the specified number of bytes and initializes them to zero\
 :warning: Returns a malloc-ed element
 ###	**linked list**
 *	lstnew			-	Create a new list node element 
@@ -52,11 +52,11 @@
 *	putstr			-	Writes a string to the standard input
 *	putchar			-	Writes a character to the standard input
 *	putnbr			-	Writes a 32-bit integer to the standard input
-*	strjoin			-	Creates a string that consists of str1 concatenated with str2
+*	strjoin			-	Creates a string that consists of str1 concatenated with str2\
 :warning: Returns a malloc-ed string
-*	split			-	Splits a string into an array of substrings
+*	split			-	Splits a string into an array of substrings\
 :warning: Returns a malloc-ed array of malloc-ed strings
-*	conv_to_base	-	Converts an integer to a specified base 
+*	conv_to_base	-	Converts an integer to a specified base\
 :warning: Returns a malloc-ed string
 *	itoa			-	Converts an integer to a string
 *	strrev			-	Reverses a string
