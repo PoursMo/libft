@@ -4,5 +4,5 @@
 
 int main()
 {
-
+    ft_putnbr_fd(-98400, 1);
 }
