@@ -4,7 +4,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*new;
 
-	if (nmemb * size > 2147483647)
+	if (nmemb *size > 2147483647)
 		return (NULL);
 	if (nmemb == 0 || size == 0)
 		return (malloc(0));

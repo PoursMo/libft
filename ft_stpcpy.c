@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char	*ft_stpcpy(char *restrict dst, const char *restrict src)
+char	*ft_stpcpy(char *dst, const char *src)
 {
 	char	*p;
 
