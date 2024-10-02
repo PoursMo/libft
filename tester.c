@@ -4,5 +4,5 @@
 
 int main()
 {
-	ft_putendl_fd("bite", 1);
+
 }
