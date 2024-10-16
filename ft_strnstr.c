@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aloubry <aloubry@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/03 11:21:44 by aloubry           #+#    #+#             */
+/*   Updated: 2024/10/03 11:28:36 by aloubry          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *str, const char *substr, size_t n)
@@ -7,13 +19,13 @@ char	*ft_strnstr(const char *str, const char *substr, size_t n)
 	substrlen = ft_strlen(substr);
 	if (!*substr)
 		return ((char *)str);
-    if (n < substrlen)
-        return (NULL);
-    while (*str && n > 0)
-    {
+	while (*str && n > 0)
+	{
+		if (n < substrlen)
+			return (NULL);
 		if (!ft_memcmp(str++, substr, substrlen))
 			return ((char *)str - 1);
-        n--;
-    }
+		n--;
+	}
 	return (NULL);
 }
