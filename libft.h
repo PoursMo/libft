@@ -81,4 +81,9 @@ typedef struct s_buffer
 
 char	*get_next_line(int fd);
 
+//extra
+int		ft_isspace(int c);
+int		ft_islower(int c);
+int		ft_isupper(int c);
+
 #endif
