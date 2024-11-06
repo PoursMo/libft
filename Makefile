@@ -33,19 +33,19 @@ SRCS =	ft_isalpha.c		\
 		ft_putchar_fd.c		\
 		ft_putstr_fd.c		\
 		ft_putendl_fd.c		\
-		ft_putnbr_fd.c
-BONUSSRCS = ft_lstnew.c			\
-			ft_lstadd_front.c	\
-			ft_lstsize.c		\
-			ft_lstlast.c		\
-			ft_lstadd_back.c	\
-			ft_lstdelone.c		\
-			ft_lstclear.c		\
-			ft_lstiter.c		\
-			ft_lstmap.c		
+		ft_putnbr_fd.c		\
+		get_next_line.c		\
+		ft_lstnew.c			\
+		ft_lstadd_front.c	\
+		ft_lstsize.c		\
+		ft_lstlast.c		\
+		ft_lstadd_back.c	\
+		ft_lstdelone.c		\
+		ft_lstclear.c		\
+		ft_lstiter.c		\
+		ft_lstmap.c		
 OBJSDIR = objs/
 OBJS = $(patsubst %.c,$(OBJSDIR)%.o,$(SRCS))
-BONUSOBJS = $(patsubst %.c,$(OBJSDIR)%.o,$(BONUSSRCS))
 NAME = libft.a
 
 all: $(NAME)
@@ -59,15 +59,13 @@ $(OBJSDIR)%.o: %.c | $(OBJSDIR)
 $(NAME): $(OBJS)
 	ar rcs $@ $(OBJS)
 
-bonus: $(BONUSOBJS)
-		ar rcs $(NAME) $(BONUSOBJS)
-
 clean:
 	rm -f $(OBJS) $(BONUSOBJS)
 
 fclean: clean
 	rm -f $(NAME)
+	rm -rf $(OBJSDIR)
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re

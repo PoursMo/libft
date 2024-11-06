@@ -14,7 +14,9 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
+//libft
 typedef struct s_list
 {
 	void			*content;
@@ -64,5 +66,19 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//get_next_line
+# define GNL_MAX_FD 1024
+# ifndef GNL_BUFF_SIZE
+#  define GNL_BUFF_SIZE 1024
+# endif
+
+typedef struct s_buffer
+{
+	char	buffer[GNL_BUFF_SIZE];
+	size_t	offset;
+}	t_buffer;
+
+char	*get_next_line(int fd);
 
 #endif
