@@ -21,6 +21,7 @@ SRCS =	ft_isalpha.c		\
 		ft_memcmp.c			\
 		ft_strnstr.c		\
 		ft_atoi.c			\
+		ft_atoi_hex.c		\
 		ft_calloc.c			\
 		ft_strdup.c			\
 		ft_substr.c			\
@@ -46,7 +47,8 @@ SRCS =	ft_isalpha.c		\
 		ft_lstmap.c			\
 		ft_isspace.c		\
 		ft_islower.c		\
-		ft_isupper.c
+		ft_isupper.c		\
+		ft_isxdigit.c
 OBJSDIR = objs/
 OBJS = $(patsubst %.c,$(OBJSDIR)%.o,$(SRCS))
 NAME = libft.a

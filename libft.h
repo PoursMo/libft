@@ -6,7 +6,7 @@
 /*   By: aloubry <aloubry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 11:29:42 by aloubry           #+#    #+#             */
-/*   Updated: 2024/10/03 11:32:21 by aloubry          ###   ########.fr       */
+/*   Updated: 2024/11/09 18:51:48 by aloubry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,5 +85,7 @@ char	*get_next_line(int fd);
 int		ft_isspace(int c);
 int		ft_islower(int c);
 int		ft_isupper(int c);
+int		ft_isxdigit(int c);
+int		ft_atoi_hex(const char *nptr);
 
 #endif
