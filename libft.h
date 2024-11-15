@@ -69,13 +69,11 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 //get_next_line
 # define GNL_MAX_FD 1024
-# ifndef GNL_BUFF_SIZE
-#  define GNL_BUFF_SIZE 1024
-# endif
+# define GNL_BUFF_SIZE 1024
 
 typedef struct s_buffer
 {
-	char	buffer[GNL_BUFF_SIZE];
+	char	buffer[GNL_BUFF_SIZE + 1];
 	size_t	offset;
 }	t_buffer;
 
