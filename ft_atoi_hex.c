@@ -6,7 +6,7 @@
 /*   By: aloubry <aloubry@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 11:20:54 by aloubry           #+#    #+#             */
-/*   Updated: 2024/11/09 18:49:48 by aloubry          ###   ########.fr       */
+/*   Updated: 2024/11/15 19:14:22 by aloubry          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,15 @@ int	ft_atoi_hex(const char *nptr)
 			mult = -1;
 		nptr++;
 	}
+	if (*nptr == '0' && (*(nptr + 1) == 'x' || *(nptr + 1) == 'X'))
+		nptr += 2;
 	num = 0;
-	while (*nptr)
+	while (*nptr && ft_isxdigit(*nptr))
 	{
 		if (ft_isdigit(*nptr))
 			num = num * 16 + (*nptr - '0');
-		else if (ft_isxdigit(*nptr))
-			num = num * 16 + (ft_toupper(*nptr) - 55);
 		else
-			break ;
+			num = num * 16 + (ft_toupper(*nptr) - 55);
 		nptr++;
 	}
 	return (num * mult);
